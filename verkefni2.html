@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Vefsíða Kristján Gíslasonar</title>
+    <link rel = "stylesheet" href="styles.css">
+    <meta charset="utf-8">
+
+    
+</head>
+
+<body>
+    <header class = "main-header">
+        <nav class = "nav main-nav">
+            <ul>
+                <li><a href="index.html">Heimasvæði</a></li>
+                <li><a href="Ferilskrá.html">Ferilskrá</a></li>
+                <li><a href="Dagbók.html">Dagbók og verkefni</a></li>
+                <li><a href="Lokaverkefni.html">Lokaverkefni</a></li>
+            </ul>
+        </nav>
+    
+        <h1 id = toppur> Verkefni 2 </h1>
+    </header>
+    <main> 
+        <p>Verkefni 2 felur í sér að hanna parametríska hönnun á pressfit hlut</p>
+        
+        <h4> Hugmynd að hlut - skrifað 10. janúar 2020</h4>
+        <p> 
+        Ég byrjaði verkefni 2 á að brainstorma hugmynd að hlut sem ég vildi hanna, ég fór í gegnum margar myndir á google og skoðaði verkefni sem aðrir hafa gert. Eftir svolítinn tíma ákvað ég að búa til
+        einfaldan kassa en kassann sem ég hugsaði mér til þess að byrja með átti að vera einhvað svipaður þessum: </br></br>
+        <center>  <img src="kassi.png" alt="Upphaflega hugmynd að hönnun minni" width="300" height="300"> </center> </br> 
+        Ég taldi þessa hönnun vera geranlega fyrir þetta verkefni mér fannst kassinn vera mjög flottur, ég ætlaði ekki að hanna nákvæmlega eins kassa, ég hugsaði mér að kannski væri sniðugt að gera 
+        kassann án þess að hafa lok þar sem ég taldi það vera nokkuð flókið svona í fyrstu hugsun. Þegar ég var ákveðinn í þessu þá var næsta skref að ákveða hvaða forrit ég skildi nota við teikningu
+        á kassanum.
+        </p>
+        <h4> Freecad - skrifað 10. janúar 2020</h4>
+        <p> 
+        Næsta skrefið í ferlinu var að ákveða hvaða forrit ég skildi nota við hönnun á kassanum, ég fór inn á vefsíðu Hafliða og skoðaði hvaða CAD hugbúnað hann mældi með fyrir hönnunina. 
+        Haflði mældi með 2. forritum, bæði Freecad og Fusion 360. Mér fannst frekar áhugavert að Freecad væri open source og frítt að niðurhala því, það virkaði einnig vel í Macbook tölvunni minni og því 
+        þæginlegt að vinna verkefnið heima fyrir. Ég tók þá ákvörðun um að ég skildi nota Freecad og því var ekki aftursnúið. Ég byrjaði að setja það upp og fiktaði við það í daggóðan tíma. Mér leyst 
+        bara mjög vel á það. Ég skoðaði því næst Video sem ég fann á netinu og fylgdi því alveg í gegn. Í videoinu var sýnidæmi um parametríska hönnun á kassa, ekkert ósvipuðum og ég hafði hugsað mér að gera 
+        og því þæginlegt að fylgja því alveg í gegn. 
+        </p>
+        <h4> Hönnun á kassa í Freecad - skrifað 10. janúar 2020</h4>
+        <p> 
+        Í freecad byrjaði ég á að skilgreina parametra á kassanum eins og sýnt er á mynd:
+        <center>
+        <div class="image123"> 
+            <img src="parameters.png" height="300" width="300">
+            <img class="middle-img" src="parameters1.png" height="300" width="300">       
+        </div>
+        </center>
+        Eins og sjá má er parameterinn side_width styttri heldur en front_width en það stafar að því að hægri og vinstri hlið kassans þarf að vera með styttri breidd til þess að kassinn 
+        getur passað saman. næst teiknaði ég eftirfarandi kassa, bjó til skorður og skilgreindi rétta parametra. Þetta gerði ég fyrir allar hliðarnar. </br>
+        <center>  <img src="teiknadurkassi.png" alt="teiknadurkassi" width="850" height="700"> </center> </br> 
+        Því næst "extrudeaði" ég kassann sem ég teiknaði og hann fékk parameterinn "thickenss" sem eru 4mm. þetta gerði ég líka fyrir allar hliðarnar. </br> 
+        <center>  <img src="extrude.png" alt="extrude" width="850" height="700"> </center> </br> 
+        Næsta skref var svo að búa til "fingers" á kassann en tilgangur þeirra er að láta kassann passa saman. Ég gerði það með eftirfarandi hátt:
+        <center>  <img src="fingers.png" alt="fingers" width="850" height="700"> </center> </br>
+        Hér má sjá að vegalengdinga frá byrjun fingers frá brún, en vegalengdin er parameterinn "padthickness" sem er 15 mm. </br>
+        Næsta var það svo að fá fingers á alla hliðina, en það gerði ég með linear array og mirror í Freecad:
+        <center>  <img src="fingerslinear.png" alt="fingerslinear" width="850" height="700"> </center> </br>
+        Hér má sjá að fingers ná út 130 mm frá vegalengdinni padthickness, ég setti 5 fingers á langhlið og 3 á minni hliðina. Lokaniðurstaðan af einni hlið var svo þessi:
+        <center>  <img src="oneside.png" alt="oneside" width="850" height="700"> </center> </br>
+        </p>
+
+
+
+        <h4>Linkar sem ég notaði í gegnum verkefnið</h4>
+        <p>https://www.youtube.com/watch?v=lf-up4UjG58</p>
+        <p>https://www.freecadweb.org/downloads.php</p> 
+        <p>https://www.google.com/search?q=press-fit+construction+kit+box&tbm=isch&ved=2ahUKEwjY162t1brnAhUHghoKHddjDSYQ2-cCegQIABAA&oq=press-fit+construction+kit+box&gs_l=img.3...2095.3927..4087...1.0..0.598.1701.1j1j0j1j0j2......0....1..gws-wiz-img.pHuKYfRtJak&ei=Ktc6XtiaG4eEatfHtbAC&bih=967&biw=1904&hl=is#imgrc=qAGx1OQ01oMqYM&imgdii=_obFASmO6wv4AM</p> 
+        <p>https://www.youtube.com/watch?v=_pITOzeqJ0Y</p> 
+        <p>https://www.youtube.com/watch?v=Zv1ydYdrU-g</p> 
+        <p>https://www.youtube.com/watch?v=pMjOq4_FGYc</p> 
+       
+    </main>
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
