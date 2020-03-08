@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Vefsíða Kristján Gíslasonar</title>
+    <link rel = "stylesheet" href="styles.css">
+    <meta charset="utf-8">
+
+    
+</head>
+
+<body>
+    <header class = "main-header">
+        <nav class = "nav main-nav">
+            <ul>
+                <li><a href="index.html">Heimasvæði</a></li>
+                <li><a href="Ferilskrá.html">Ferilskrá</a></li>
+                <li><a href="Dagbók.html">Dagbók og verkefni</a></li>
+                <li><a href="Lokaverkefni.html">Lokaverkefni</a></li>
+            </ul>
+        </nav>
+    
+        <h1 id = toppur> Verkefni 3 </h1>
+    </header>
+    <main> 
+        <p>Verkefni 3 felur í sér að hanna hlut í hönnunarforriti og 3D prenta hlutinn. Hluturinn þarf að vera hannaður þannig að ekki er hægt að fræsa hann. </p>
+        
+        <h4> Hugmynd að hlut - skrifað 5. mars 2020</h4>
+        <p> 
+        Ég byrjaði ferlið á því að brainstorma hvað ég skildi hanna, ég hugsaði mér að það væri kannski sniðugt að hanna lítinn borðlampa, mér datt samt enga sniðuga hugmynd að hönnun í hug svo 
+        ég ákvað því að leita á ný mið. Ég byrjaði á því að googla mig áfram, ég skrifaði til að mynd 3D printed object o.s.frv. Ég endaði síðan á því að finna hugmynd sem mér leist mjög vel á en 
+        hönnunina má sjá á eftirfarandi mynd:
+
+        <center>  <img src="speaker.png" alt="speaker" width="700" height="500"> </center> </br>
+        
+        Á myndinni hér að ofan má sjá hlut sem að magnar upp hljóðið frá símanum, ég taldi þetta vera mjög sniðugan hlut til þess að búa til. Hann er ekki of flókinn og ég get notað hann þar sem Ég
+        hlusta oft bara á símann minn þegar ég hlusta á tónlist heima. Það er ekki hægt að fræsa þennan hlut þar sem vegna gatsins þar sem síminn fer ofaní. Ef gatið væri ekki þá væri mjög auðvelt að 
+        fræsa hlutinn. 
+        </p>
+        <h4> Hönnun á hlut í Fusion 360 - skrifað 5. mars 2020</h4>
+        <p> 
+        Ég hef ekki mikla reynslu í Fusion 360 svo ég byrjaði í raun að hanna hlutinn vitlaust. Ég byrjaði að búa til kassa sem leit einhvernvegin svona út:
+
+        <center>  <img src="boxspeaker.png" alt="boxspeaker" width="700" height="500"> </center> </br>
+
+        Svo hugsaði mér, hvernig í ósköpunum á ég að láta formið líta út einsog það á að vera með því að byrja með svona kassa. Formið þarf að vera stærra á einum endanum heldur en hinum. 
+        Í tölvuteikningu og framsetningu á mínu fyrsta ári lærði ég það að það er hægt að extrudea tvö sketch saman. Ég horfði á myndbönd á netinu til þess að kynna mér hvernig maður átti að framkvæma 
+        það í Fusion 360 en þetta myndband kom mikið til hjálpar: https://www.youtube.com/watch?v=-Z9ioh2NfwY. Aðferðin sem ég notaði heitir Loft. Ég byrjaði á að gera sketch fyrir framglið hlutsins. Á
+        eftirfarandi mynd má bæði sjá breid og hæð framhliðar:
+
+        <center>  <img src="longwidth.png" alt="longwidth" width="700" height="500"> </center> </br>
+        <center>  <img src="longheight.png" alt="longheight" width="700" height="500"> </center> </br>
+
+        Næst gerði ég sketch fyrir bakhlið hlutsins,lengdir og sketch má sjá á mynd:
+
+        <center>  <img src="smallwidth.png" alt="smallwidth" width="700" height="500"> </center> </br>
+        <center>  <img src="smallheight.png" alt="smallheight" width="700" height="500"> </center> </br>
+
+        Bæði sketch má síðan sjá á eftirfarandi mynd, taka þarf fram að ég staðsetti sketchin á mismunandi stað í rúminu. Það gerði ég með því að nota offset plane.
+
+        <center>  <img src="both.png" alt="both" width="700" height="500"> </center> </br>
+
+        Vegalengdin á milli plana er 140.06 mm. Næst var það síðan að notfæra okkur aðferðina loft í fusion, það má sjá á næstu mynd:
+
+        <center>  <img src="fillet.png" alt="fillet" width="700" height="500"> </center> </br>
+
+        Á myndinni má sjá að búið að tengja saman bæði sketch með body sem nær á milli. Einnig má sjá að búið er bæta við fillet (rúnaða kanta) en radíusinn þar er 8 mm.
+        Næsta skrefið var svo að búa til einhverskonar gat sem síminn passaði ofan í. Ég notaði offset plane og bjó til plan ofan á hlutnum. Þetta má sjá á næstu myndum: 
+
+        <center>  <img src="hole.png" alt="hole" width="700" height="500"> </center> </br>
+        <center>  <img src="holewidth.png" alt="holewidth" width="700" height="500"> </center> </br>
+
+        Þarna má sjá að gatið fyrir símann hefur breiddina 7 cm, breiddin á símanum mínum er 6.8 cm svo hann ætti að passa fullkomlega. Lokahönnunina má síðan sjá hér:
+
+        <center>  <img src="finishspeaker.png" alt="finishspeaker" width="700" height="500"> </center> </br>
+
+        Næsta skref í ferlinu var síðan að exporta skránni í STL skrá. Það gerði ég með því að hægri smella á body í Fusion og gera save as STL. Þá opnaðist eftirfarandi gluggi:
+
+        <center>  <img src="stl.png" alt="stl" width="700" height="500"> </center> </br>
+
+        Í þessum glugga hafði ég valmöguleika á að stilla fjölda þríhyrninga í STL skránni en STL skrá les aðeins hlutina útfrá litlum þríhyrningum. Því fleiri þríhyrninga, því lengri tíma tekur
+        3D prentarann að prenta út hlutinn. Ég ákvað að medium væri alveg nóg fyrir mig þar sem að hluturinn minn er ekkert sérlega flókinn. Næst var það síðan að koma STL skránni yfir í 
+        Ultimaker Cura. Það gerði ég með því að draga STL skránna yfir í Cura. Útkoman var þessi: 
+        </br></br>
+
+        <center>  <img src="ultimaker.png" alt="ultimaker" width="700" height="500"> </center> </br>
+        <h4> Ultimaker Cura og 3D prentun - skrifað 6. mars 2020</h4>
+        <p> 
+            Ég stillti hlutnum þannig að minni hliðin stóð niður, þetta gerði ég til þess að ég þurfti ekki að búa til mikið af undirstöðum, fyrst lét ég hann snúa flatann en þá tók 
+            9 klukkustundur fyrir 3D prentarann að klára. Eftir að ég síðan breytti honum þurfti aðeins 5 klukkustundir, það þurfti 98 gr af efni til þess að prenta hann. Stillingarnar sem ég gerði í
+            Cura má síðan sjá hér að neðan:
+            </br></br>
+    
+            <center>  <img src="infilldensity.png" alt="infilldensity" width="400" height="50"> </center> </br>
+            <center>  <img src="layerheight.png" alt="layerheight" width="400" height="50"> </center> </br>
+            <center>  <img src="printspeed.png" alt="printspeed" width="400" height="50"> </center> </br>
+    
+            Allar aðrar stillingar voru eins. Síðan færði ég STL fileinn yfir á usb kubb og usb kubburinn síðan settur í Ultimaker Extended í fablab. Myndir af þessu
+            og upphafi prentunar má sjá hér að neðan:
+            </br></br>
+    
+            <center>  <img src="3dprentun.png" alt="3dprentun" width="300" height="500"> </center> </br>
+            <center>  <img src="igangi.png" alt="igangi" width="300" height="500"> </center> </br>
+            <center>  <img src="igangi2.png" alt="igangi" width="300" height="500"> </center> </br>
+    
+            Hér að neðan má síðan sjá hann í heilu lagi, en þarna á eftir að taka undirstöðurnar í burtu, undirstöðurnar eru staðsettar í gatinu fyrir símann og 
+            á botni hlutsins:
+            </br></br>
+    
+            <center>  <img src="tilbuin.png" alt="tilbuin" width="300" height="500"> </center> </br>    
+        </p>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+        <h4>Linkar sem ég notaði í gegnum verkefnið</h4>
+        <p>https://chinaphonesandroid5.blogspot.com/2019_06_06_archive.html</p>
+        <p>https://www.youtube.com/watch?v=-Z9ioh2NfwY</p>
+        <p>https://www.youtube.com/watch?v=wxbjlHowd2Q</p> 
+        <p>https://www.youtube.com/watch?v=BJjTwOnMQkY&feature=youtu.be</p> 
+        <p>https://www.youtube.com/watch?v=JP5UDeBH4y4</p> 
+        <p>https://vimeopro.com/academany/fab-2019/video/318844907</p> 
+        <p></p> 
+        <p></p> 
+        <p></p> 
+       
+       
+    </main>
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
